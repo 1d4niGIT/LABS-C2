@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyS2 : MonoBehaviour
 {
     [SerializeField] private string enemyName = "Slime";
     [SerializeField] private Health health = new Health();

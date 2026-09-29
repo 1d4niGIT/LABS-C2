@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerS2 : MonoBehaviour
 {
     [SerializeField] private string playerName = "Jugador 1";
     [SerializeField] private Health health = new Health();
     [SerializeField] private Weapon weapon = new Weapon();
 
     [Header("A quien ataco")]
-    [SerializeField] private Enemy defaultTarget;
+    [SerializeField] private EnemyS2 defaultTarget;
 
     void Start()
     {
@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void Attack (Enemy target)
+    public void Attack (EnemyS2 target)
     {
         weapon.Attack(target.GetHealth());
     }
